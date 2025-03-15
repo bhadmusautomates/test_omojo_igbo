@@ -31,7 +31,7 @@ jobs:
             npx newman run C:\Users\bhadm\Documents\Zero-to-hero\API-Training-First-API-Test.postman_collection.json -r cli,htmlextra --reporter-htmlextra-export ./newman/results.html
 
         - name: Upload Test Results
-          uses: actions/upload-artifact@v3
+          uses: actions/upload-artifact@v4
           with:
             name: postman-test-results
             path: ./newman/results.html
